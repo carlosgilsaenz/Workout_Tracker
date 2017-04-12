@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/LinearLayoutStyle"
+    tools:context="com.example.android.workouttracker.MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/completed_workout_card"
+        style="@style/CardViewStyle"
+        cardview:cardCornerRadius="@dimen/card_view_default"
+        cardview:cardElevation="@dimen/card_view_default">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/completed_text_view" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/last_workout_card"
+        style="@style/CardViewStyle"
+        cardview:cardCornerRadius="@dimen/card_view_default"
+        cardview:cardElevation="@dimen/card_view_default">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/last_text_view" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
